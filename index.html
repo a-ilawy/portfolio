@@ -391,40 +391,10 @@
             <div class="flex flex-wrap gap-3 max-w-4xl justify-center p-4">
 
               <div id="PL-skills"></div>
+              <div id="Programming_Concepts_skills"></div>
               <div id="backend-skills"></div>
               <div id="frontend-skills"></div>
               
-              <!-- Frontend Skills -->
-              <span
-                class="bg-gray-800/50 border border-blue-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 0.55s"
-                >HTML</span
-              >
-              <span
-                class="bg-gray-800/50 border border-blue-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 0.6s"
-                >CSS3</span
-              >
-              <span
-                class="bg-gray-800/50 border border-blue-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 0.65s"
-                >JavaScript</span
-              >
-              <span
-                class="bg-gray-800/50 border border-blue-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 0.7s"
-                >TypeScript</span
-              >
-              <span
-                class="bg-gray-800/50 border border-blue-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 0.75s"
-                >Bootstrap</span
-              >
-              <span
-                class="bg-gray-800/50 border border-blue-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 0.8s"
-                >Tailwind CSS</span
-              >
 
               <!-- DevOps/Tools -->
               <span
@@ -458,32 +428,7 @@
                 >Nginx</span
               >
 
-              <!-- Programming Concepts -->
-              <span
-                class="bg-gray-800/50 border border-pink-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-700 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 1.15s"
-                >Data Structures</span
-              >
-              <span
-                class="bg-gray-800/50 border border-pink-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-700 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 1.2s"
-                >OOP</span
-              >
-              <span
-                class="bg-gray-800/50 border border-pink-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-700 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 1.25s"
-                >SOLID Principles</span
-              >
-              <span
-                class="bg-gray-800/50 border border-pink-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-700 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 1.3s"
-                >API Design</span
-              >
-              <span
-                class="bg-gray-800/50 border border-pink-500/30 px-4 py-2 rounded-full font-medium hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-700 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition-all duration-300 animate-pop-in project-card"
-                style="animation-delay: 1.35s"
-                >C++</span
-              >
+              
             </div>
           </div>
         </section>
@@ -1110,6 +1055,10 @@
       fetch('sections/skills/programming_Lg.html')
     .then(response => response.text())
     .then(data => document.getElementById('PL-skills').innerHTML = data);
+
+    fetch('sections/skills/Programming_Concepts.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('Programming_Concepts_skills').innerHTML = data);
 
      fetch('sections/skills/backend.html')
     .then(response => response.text())
