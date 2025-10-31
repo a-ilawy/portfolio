@@ -11,7 +11,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet" />
-      <link rel="stylesheet" href="assets/css/skills.css" />
+     
     <title>Ahmed Allawy | Computer and Systems Engineer</title>
     <style>
       @keyframes fadeIn {
@@ -392,6 +392,7 @@
 
               <div id="PL-skills"></div>
               <div id="Programming_Concepts_skills"></div>
+              <div id="protocols-skills"></div>
               <div id="backend-skills"></div>
               <div id="frontend-skills"></div>
               
@@ -1059,6 +1060,10 @@
     fetch('sections/skills/Programming_Concepts.html')
     .then(response => response.text())
     .then(data => document.getElementById('Programming_Concepts_skills').innerHTML = data);
+
+    fetch('sections/skills/protocols.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('protocols-skills').innerHTML = data);
 
      fetch('sections/skills/backend.html')
     .then(response => response.text())
