@@ -394,6 +394,7 @@
               <div id="Programming_Concepts_skills"></div>
               <div id="protocols-skills"></div>
               <div id="Frameworks-tools-skills"></div>
+              <div id="platforms_clouds-skills"></div>
               <div id="backend-skills"></div>
               <div id="frontend-skills"></div>
               
@@ -1069,6 +1070,10 @@
     fetch('sections/skills/Frameworks_Tools.html')
     .then(response => response.text())
     .then(data => document.getElementById('Frameworks-tools-skills').innerHTML = data);
+      
+    fetch('sections/skills/platforms_clouds.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('platforms_clouds-skills').innerHTML = data);
 
      fetch('sections/skills/backend.html')
     .then(response => response.text())
