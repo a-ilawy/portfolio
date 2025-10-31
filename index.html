@@ -390,6 +390,7 @@
           <div class="flex justify-center">
             <div class="flex flex-wrap gap-3 max-w-4xl justify-center p-4">
 
+              <div id="PL-skills"></div>
               <div id="backend-skills"></div>
               <div id="frontend-skills"></div>
               
@@ -1105,6 +1106,10 @@
           hamburgerSpans[2].classList.remove("-rotate-45", "-translate-y-2");
         }
       }
+
+      fetch('sections/skills/programming_Lg.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('PL-skills').innerHTML = data);
 
      fetch('sections/skills/backend.html')
     .then(response => response.text())
