@@ -366,7 +366,7 @@
             </span>
           </h2>
         </div>
-        <!-- here -->
+        <div class="mqtt_cer"></div>
       </section>
 
       <section id="projects" class="py-20">
@@ -872,6 +872,11 @@
     fetch('sections/skills/other_skills.html')
       .then(response => response.text())
       .then(data => document.getElementById('other_skills').innerHTML = data);
+    
+    fetch('sections/certificates/mqtt_certificate.html')
+      .then(response => response.text())
+      .then(data => document.querySelector('mqtt_cer').innerHTML = data);
+
 
   </script>
 
