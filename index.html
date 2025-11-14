@@ -336,8 +336,6 @@
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
-          <!-- <div id="Freelance_IoT_developer"></div>
-          <div id="content_creator"></div> -->
           <div id="experience-section"></div>
         </div>
 
@@ -380,7 +378,7 @@
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div id="egypt_fwd"></div>
+          <!-- <div id="egypt_fwd"></div>
           <div id="NTI"></div>
           <div id="ITI"></div>
           <div id="cisco"></div>
@@ -390,7 +388,8 @@
           <div id="hivemq_professional"></div>
           <div id="HiveMQ_Associate"></div>
           <div id="google"></div>
-          <div id="usaid"></div>
+          <div id="usaid"></div> -->
+          <div id="certificates-section"></div>
         </div>
       </section>
       <!-- end of certificates section -->
@@ -903,47 +902,43 @@
       .then(data => document.getElementById('other_skills').innerHTML = data);
 
 
-    fetch('sections/certificates/hivemq_professional.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('hivemq_professional').innerHTML = data);
-    fetch('sections/certificates/HiveMQ_Associate.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('HiveMQ_Associate').innerHTML = data);
-    fetch('sections/certificates/egypt_fwd.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('egypt_fwd').innerHTML = data);
-    fetch('sections/certificates/NTI.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('NTI').innerHTML = data);
-    fetch('sections/certificates/ITI_summer_training.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('ITI').innerHTML = data);
-    fetch('sections/certificates/cisco.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('cisco').innerHTML = data);
-    fetch('sections/certificates/IoT_value_chain.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('IoT_value_chain').innerHTML = data);
-    fetch('sections/certificates/MoT.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('MoT').innerHTML = data);
-    fetch('sections/certificates/MoT2.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('MoT2').innerHTML = data);
-    fetch('sections/certificates/google.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('google').innerHTML = data);
-    fetch('sections/certificates/usaid.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('usaid').innerHTML = data);
+    // fetch('sections/certificates/hivemq_professional.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('hivemq_professional').innerHTML = data);
+    // fetch('sections/certificates/HiveMQ_Associate.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('HiveMQ_Associate').innerHTML = data);
+    // fetch('sections/certificates/egypt_fwd.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('egypt_fwd').innerHTML = data);
+    // fetch('sections/certificates/NTI.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('NTI').innerHTML = data);
+    // fetch('sections/certificates/ITI_summer_training.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('ITI').innerHTML = data);
+    // fetch('sections/certificates/cisco.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('cisco').innerHTML = data);
+    // fetch('sections/certificates/IoT_value_chain.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('IoT_value_chain').innerHTML = data);
+    // fetch('sections/certificates/MoT.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('MoT').innerHTML = data);
+    // fetch('sections/certificates/MoT2.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('MoT2').innerHTML = data);
+    // fetch('sections/certificates/google.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('google').innerHTML = data);
+    // fetch('sections/certificates/usaid.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('usaid').innerHTML = data);
 
-    // fetch('sections/experience/Freelance_IoT_developer.html')
-    //   .then(response => response.text())
-    //   .then(data => document.getElementById('Freelance_IoT_developer').innerHTML = data);
-      
-    // fetch('sections/experience/content_creator.html')
-    //   .then(response => response.text())
-    //   .then(data => document.getElementById('content_creator').innerHTML = data);
+      fetch('sections/certificates.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('certificates-section').innerHTML = data);
 
     fetch('sections/experience/test.html')
       .then(response => response.text())
