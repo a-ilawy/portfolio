@@ -822,6 +822,11 @@
       }
     }
 
+    fetch('sections/experience.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('experience').innerHTML = data);
+
+      
     fetch('sections/skills.html')
       .then(response => response.text())
       .then(data => document.getElementById('skills').innerHTML = data);
@@ -834,12 +839,7 @@
 
 
 
-    fetch('sections/experience/Freelance_IoT_developer.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('Freelance_IoT_developer').innerHTML = data);
-    fetch('sections/experience/content_creator.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('content_creator').innerHTML = data);
+    
 
 
   </script>
