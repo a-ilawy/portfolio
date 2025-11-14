@@ -348,7 +348,7 @@
       <!-- end of skills sections -->
 
       <!-- certificates section -->
-       <span id="certificates-section"></span>
+      <section id="certificates" class="py-20 animate-slide-in-up"></section>
       <!-- end of certificates section -->
 
       <!-- projects section -->
@@ -842,7 +842,7 @@
 
     fetch('sections/certificates.html')
       .then(response => response.text())
-      .then(data => document.getElementById('certificates-section').innerHTML = data);
+      .then(data => document.getElementById('certificates').innerHTML = data);
 
 
 
