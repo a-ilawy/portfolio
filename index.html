@@ -344,7 +344,7 @@
       <!-- end of experience section -->
 
       <!-- skills section -->
-      <span id="skills-section"></span>
+      <section id="skills" class="py-20 animate-slide-in-up"></section>
       <!-- end of skills sections -->
 
       <!-- certificates section -->
@@ -836,7 +836,7 @@
 
     fetch('sections/skills.html')
       .then(response => response.text())
-      .then(data => document.getElementById('skills-section').innerHTML = data);
+      .then(data => document.getElementById('skills').innerHTML = data);
 
    
 
@@ -845,7 +845,7 @@
       .then(data => document.getElementById('certificates-section').innerHTML = data);
 
 
-      
+
     fetch('sections/experience/Freelance_IoT_developer.html')
       .then(response => response.text())
       .then(data => document.getElementById('Freelance_IoT_developer').innerHTML = data);
