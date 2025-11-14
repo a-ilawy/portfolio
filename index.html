@@ -336,7 +336,8 @@
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
-          <div id="experience-section"></div>
+          <div id="Freelance_IoT_developer"></div>
+          <div id="content_creator"></div>
         </div>
 
       </section>
@@ -369,7 +370,8 @@
       <!-- end of skills sections -->
 
       <!-- certificates section -->
-      <section id="certificates" class="py-20 animate-slide-in-up">
+       <span id="certificates-section"></span>
+      <!-- <section id="certificates" class="py-20 animate-slide-in-up">
         <div class="text-center mb-12">
           <h2 class="text-4xl font-extrabold mb-4">
             My Courses
@@ -377,8 +379,8 @@
             </span>
           </h2>
         </div>
-        <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> -->
-          <!-- <div id="egypt_fwd"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div id="egypt_fwd"></div>
           <div id="NTI"></div>
           <div id="ITI"></div>
           <div id="cisco"></div>
@@ -388,10 +390,9 @@
           <div id="hivemq_professional"></div>
           <div id="HiveMQ_Associate"></div>
           <div id="google"></div>
-          <div id="usaid"></div> -->
-          <div id="certificates-section"></div>
-        <!-- </div> -->
-      </section>
+          <div id="usaid"></div>
+        </div>
+      </section> -->
       <!-- end of certificates section -->
 
       <!-- projects section -->
@@ -901,6 +902,9 @@
       .then(response => response.text())
       .then(data => document.getElementById('other_skills').innerHTML = data);
 
+        fetch('sections/certificates.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('certificates-section').innerHTML = data);
 
     // fetch('sections/certificates/hivemq_professional.html')
     //   .then(response => response.text())
@@ -936,13 +940,13 @@
     //   .then(response => response.text())
     //   .then(data => document.getElementById('usaid').innerHTML = data);
 
-      fetch('sections/certificates.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('certificates-section').innerHTML = data);
-
-    fetch('sections/experience/test.html')
+    fetch('sections/experience/Freelance_IoT_developer.html')
       .then(response => response.text())
-      .then(data => document.getElementById('experience-section').innerHTML = data);
+      .then(data => document.getElementById('Freelance_IoT_developer').innerHTML = data);
+    fetch('sections/experience/content_creator.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('content_creator').innerHTML = data);
+
 
   </script>
 
