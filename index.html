@@ -344,29 +344,7 @@
       <!-- end of experience section -->
 
       <!-- skills section -->
-      <section id="skills" class="py-20 animate-slide-in-up">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-extrabold mb-4">
-            My
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-600">Skills</span>
-          </h2>
-          <p class="text-lg opacity-80 max-w-xl mx-auto">
-            Technologies I work with
-          </p>
-        </div>
-        <div class="flex justify-center">
-          <div class="flex flex-wrap gap-3 max-w-4xl justify-center p-4">
-
-            <div id="PL-skills"></div>
-            <div id="Programming_Concepts_skills"></div>
-            <div id="protocols-skills"></div>
-            <div id="Frameworks-tools-skills"></div>
-            <div id="platforms_clouds-skills"></div>
-            <div id="other_skills"></div>
-
-          </div>
-        </div>
-      </section>
+      <span id="skills-section"></span>
       <!-- end of skills sections -->
 
       <!-- certificates section -->
@@ -856,35 +834,18 @@
       }
     }
 
-    fetch('sections/skills/programming_Lg.html')
+    fetch('sections/skills.html')
       .then(response => response.text())
-      .then(data => document.getElementById('PL-skills').innerHTML = data);
+      .then(data => document.getElementById('skills-section').innerHTML = data);
 
-    fetch('sections/skills/Programming_Concepts.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('Programming_Concepts_skills').innerHTML = data);
-
-    fetch('sections/skills/protocols.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('protocols-skills').innerHTML = data);
-
-    fetch('sections/skills/Frameworks_Tools.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('Frameworks-tools-skills').innerHTML = data);
-
-    fetch('sections/skills/platforms_clouds.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('platforms_clouds-skills').innerHTML = data);
-
-    fetch('sections/skills/other_skills.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('other_skills').innerHTML = data);
+   
 
     fetch('sections/certificates.html')
       .then(response => response.text())
       .then(data => document.getElementById('certificates-section').innerHTML = data);
 
 
+      
     fetch('sections/experience/Freelance_IoT_developer.html')
       .then(response => response.text())
       .then(data => document.getElementById('Freelance_IoT_developer').innerHTML = data);
