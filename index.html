@@ -336,8 +336,9 @@
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
-          <div id="Freelance_IoT_developer"></div>
-          <div id="content_creator"></div>
+          <!-- <div id="Freelance_IoT_developer"></div>
+          <div id="content_creator"></div> -->
+          <div id="experience-section"></div>
         </div>
 
       </section>
@@ -936,13 +937,17 @@
       .then(response => response.text())
       .then(data => document.getElementById('usaid').innerHTML = data);
 
-    fetch('sections/experience/Freelance_IoT_developer.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('Freelance_IoT_developer').innerHTML = data);
-    fetch('sections/experience/content_creator.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('content_creator').innerHTML = data);
+    // fetch('sections/experience/Freelance_IoT_developer.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('Freelance_IoT_developer').innerHTML = data);
+      
+    // fetch('sections/experience/content_creator.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('content_creator').innerHTML = data);
 
+    fetch('sections/experience/test.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('experience-section').innerHTML = data);
 
   </script>
 
