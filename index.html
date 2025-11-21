@@ -173,6 +173,11 @@
       animation-delay: 0.7s;
     }
 
+    .filter-btn.active {
+      background: rgba(99, 102, 241, 0.5);
+      border-color: rgba(99, 102, 241, 0.8);
+    }
+
     /* Add more as needed based on number of projects/skills */
   </style>
 
@@ -341,326 +346,11 @@
 
       <!-- projects section -->
       <section id="projects" class="py-20">
-        <div class="text-center mb-12 animate-slide-in-up">
-          <h2 class="text-4xl font-extrabold mb-4">
-            Featured
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-600">Projects</span>
-          </h2>
-          <p class="text-lg opacity-80 max-w-xl mx-auto">
-            What I've been working on
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            class="bg-gray-800/50 border border-indigo-500/20 rounded-xl p-6 hover:-translate-y-3 hover:shadow-xl hover:shadow-indigo-500/20 transition-all duration-500 animate-slide-in-up project-card">
-            <h3 class="text-xl font-semibold mb-4">Twitter API Clone</h3>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Django</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">DRF</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Redis</span>
-            </div>
-            <p class="text-base opacity-90 mb-4 flex-grow">
-              A comprehensive backend implementation of a Twitter clone with
-              features like authentication, tweet management, likes, retweets,
-              notifications, and real-time chat.
-            </p>
-            <details class="mb-4">
-              <summary class="text-emerald-400 font-medium cursor-pointer">
-                Key Features
-              </summary>
-              <ul class="list-disc pl-5 mt-2 text-sm">
-                <li>
-                  Authentication: Signup, email activation, login, password
-                  management with JWT
-                </li>
-                <li>Social Auth: Login with Google</li>
-                <li>
-                  Tweet Management: CRUD operations, likes, bookmarks,
-                  retweets
-                </li>
-                <li>User Management: Profiles, following/followers</li>
-                <li>Real-time Notifications & Chat using WebSockets</li>
-              </ul>
-            </details>
-            <div class="flex gap-4">
-              <a href="https://github.com/OmarMuhammmed/E-Learing-Platform" target="_blank"
-                class="text-white hover:text-indigo-400 transition-all duration-300 flex items-center"><i
-                  class="fab fa-github mr-2"></i>View Code</a>
-            </div>
-          </div>
-          <div
-            class="bg-gray-800/50 border border-indigo-500/20 rounded-xl p-6 hover:-translate-y-3 hover:shadow-xl hover:shadow-indigo-500/20 transition-all duration-500 animate-slide-in-up project-card">
-            <h3 class="text-xl font-semibold mb-4">E-Learning Platform</h3>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Django</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">DRF</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">WebSockets</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Docker</span>
-            </div>
-            <p class="text-base opacity-90 mb-4 flex-grow">
-              A full-featured online course management system that allows
-              instructors to create courses, manage content, and enroll
-              students with real-time interactions.
-            </p>
-            <details class="mb-4">
-              <summary class="text-emerald-400 font-medium cursor-pointer">
-                Key Features
-              </summary>
-              <ul class="list-disc pl-5 mt-2 text-sm">
-                <li>Course Management: Structured chapters and lessons</li>
-                <li>User Authentication: Role-based access control</li>
-                <li>Content Management: Support for various content types</li>
-                <li>
-                  Interactive Learning: Drag-and-drop content reordering
-                </li>
-                <li>Real-Time Chat: Using Django Channels and Redis</li>
-                <li>Production-Ready: Dockerized deployment</li>
-              </ul>
-            </details>
-            <div class="flex gap-4">
-              <a href="https://github.com/OmarMuhammmed/E-Learing-Platform" target="_blank"
-                class="text-white hover:text-indigo-400 transition-all duration-300 flex items-center"><i
-                  class="fab fa-github mr-2"></i>View Code</a>
-            </div>
-          </div>
-          <div
-            class="bg-gray-800/50 border border-indigo-500/20 rounded-xl p-6 hover:-translate-y-3 hover:shadow-xl hover:shadow-indigo-500/20 transition-all duration-500 animate-slide-in-up project-card">
-            <h3 class="text-xl font-semibold mb-4">E-Commerce API</h3>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Django</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">DRF</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Docker</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Redis</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Celery</span>
-            </div>
-            <p class="text-base opacity-90 mb-4 flex-grow">
-              A robust, scalable, and high-performance RESTful API for
-              e-commerce platforms built with Django and Django Rest
-              Framework.
-            </p>
-            <details class="mb-4">
-              <summary class="text-emerald-400 font-medium cursor-pointer">
-                Key Features
-              </summary>
-              <ul class="list-disc pl-5 mt-2 text-sm">
-                <li>
-                  Complete E-Commerce Functionality: Products, categories,
-                  orders, payments, user profiles
-                </li>
-                <li>
-                  High Performance: Optimized database queries, caching
-                  strategies, and asynchronous processing
-                </li>
-                <li>
-                  Authentication & Authorization: JWT-based secure
-                  authentication with role-based permissions
-                </li>
-                <li>
-                  Background Processing: Celery for handling
-                  resource-intensive tasks asynchronously
-                </li>
-                <li>
-                  Database Optimization: PostgreSQL with optimized queries and
-                  indexing strategies
-                </li>
-              </ul>
-            </details>
-            <div class="flex gap-4">
-              <a href="https://github.com/OmarMuhammmed/Ecommerce-API" target="_blank"
-                class="text-white hover:text-indigo-400 transition-all duration-300 flex items-center"><i
-                  class="fab fa-github mr-2"></i>View Code</a>
-            </div>
-          </div>
-          <div
-            class="bg-gray-800/50 border border-indigo-500/20 rounded-xl p-6 hover:-translate-y-3 hover:shadow-xl hover:shadow-indigo-500/20 transition-all duration-500 animate-slide-in-up project-card">
-            <h3 class="text-xl font-semibold mb-4">Recipe API</h3>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Django</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">DRF</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Docker</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Nginx</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">TDD</span>
-            </div>
-            <p class="text-base opacity-90 mb-4 flex-grow">
-              A robust Django REST API for managing recipes, ingredients, and
-              user authentication. Built with Django REST Framework following
-              Test-Driven Development (TDD) architecture and designed for
-              scalability with Docker containerization. Production-ready with
-              Nginx reverse proxy and uWSGI.
-            </p>
-            <details class="mb-4">
-              <summary class="text-emerald-400 font-medium cursor-pointer">
-                Key Features
-              </summary>
-              <ul class="list-disc pl-5 mt-2 text-sm">
-                <li>
-                  User Authentication: Token-based authentication system
-                </li>
-                <li>Recipe Management: Full CRUD operations for recipes</li>
-                <li>
-                  Ingredient Management: Manage recipe ingredients with
-                  quantities
-                </li>
-                <li>Tag System: Organize recipes with custom tags</li>
-                <li>Image Upload: Support for recipe images with Pillow</li>
-                <li>
-                  RESTful API: Clean API design with automatic documentation
-                </li>
-                <li>
-                  Docker Support: Containerized deployment with Docker Compose
-                </li>
-                <li>Production Ready: Nginx reverse proxy with uWSGI</li>
-                <li>
-                  TDD Architecture: Built following Test-Driven Development
-                  principles
-                </li>
-                <li>
-                  API Documentation: Auto-generated docs with drf-spectacular
-                </li>
-              </ul>
-            </details>
-            <div class="flex gap-4">
-              <a href="https://github.com/OmarMuhammmed/Recipe-API" target="_blank"
-                class="text-white hover:text-indigo-400 transition-all duration-300 flex items-center"><i
-                  class="fab fa-github mr-2"></i>View Code</a>
-            </div>
-          </div>
-          <div
-            class="bg-gray-800/50 border border-indigo-500/20 rounded-xl p-6 hover:-translate-y-3 hover:shadow-xl hover:shadow-indigo-500/20 transition-all duration-500 animate-slide-in-up project-card">
-            <h3 class="text-xl font-semibold mb-4">Product Search API</h3>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Django</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">DRF</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Full-Text Search</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Caching</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Multi-Language</span>
-            </div>
-            <p class="text-base opacity-90 mb-4 flex-grow">
-              A powerful and efficient product search API built with Django
-              and PostgreSQL. Provides advanced search capabilities including
-              full-text search, fuzzy matching for misspellings, partial
-              keyword matching, and multi-language support (English/Arabic)
-              with comprehensive nutrition facts tracking.
-            </p>
-            <details class="mb-4">
-              <summary class="text-emerald-400 font-medium cursor-pointer">
-                Key Features
-              </summary>
-              <ul class="list-disc pl-5 mt-2 text-sm">
-                <li>
-                  Advanced Search: Full-text search with PostgreSQL GIN
-                  indexing
-                </li>
-                <li>
-                  Fuzzy Matching: Handle misspellings using trigram similarity
-                </li>
-                <li>
-                  Multi-Language Support: English and Arabic content handling
-                </li>
-                <li>Partial Keywords: Support for incomplete search terms</li>
-                <li>
-                  Performance Optimization: Query caching and efficient
-                  database operations
-                </li>
-                <li>Smart Ranking: Relevance-based result ordering</li>
-                <li>
-                  Comprehensive Filtering: Category, brand, price range
-                  filtering
-                </li>
-                <li>
-                  Nutrition Facts: Detailed nutritional information tracking
-                </li>
-                <li>Rate Limiting: Security with request throttling</li>
-                <li>Clean Architecture: Modular design with service layer</li>
-              </ul>
-            </details>
-            <div class="flex gap-4">
-              <a href="https://github.com/OmarMuhammmed/product-search-api" target="_blank"
-                class="text-white hover:text-indigo-400 transition-all duration-300 flex items-center"><i
-                  class="fab fa-github mr-2"></i>View Code</a>
-            </div>
-          </div>
-          <div
-            class="bg-gray-800/50 border border-indigo-500/20 rounded-xl p-6 hover:-translate-y-3 hover:shadow-xl hover:shadow-indigo-500/20 transition-all duration-500 animate-slide-in-up project-card">
-            <h3 class="text-xl font-semibold mb-4">
-              Student Payment Management System
-            </h3>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Django</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">SQLite</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Docker</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">Arabic RTL</span>
-              <span class="bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full text-sm">CSV Export</span>
-            </div>
-            <p class="text-base opacity-90 mb-4 flex-grow">
-              A comprehensive Django-based web application for managing
-              student payments and academic records. Designed for educational
-              institutions to track student enrollment, monthly fees, and
-              payment status across different grade levels with Arabic
-              interface support.
-            </p>
-            <details class="mb-4">
-              <summary class="text-emerald-400 font-medium cursor-pointer">
-                Key Features
-              </summary>
-              <ul class="list-disc pl-5 mt-2 text-sm">
-                <li>
-                  Student Management: Add, update, and delete student records
-                  with grade-based organization
-                </li>
-                <li>
-                  Payment Tracking: Monthly payment management for academic
-                  year (August to June)
-                </li>
-                <li>
-                  Dashboard Analytics: Real-time statistics and revenue
-                  tracking with visual indicators
-                </li>
-                <li>
-                  Multi-language Support: Arabic interface with RTL support
-                  for educational institutions
-                </li>
-                <li>
-                  Export Capabilities: CSV export for student data and payment
-                  reports with Arabic encoding
-                </li>
-                <li>
-                  Revenue Analytics: Monthly and grade-wise revenue reporting
-                  with advanced filtering
-                </li>
-                <li>
-                  Responsive Design: Mobile-friendly interface with search and
-                  filter capabilities
-                </li>
-                <li>
-                  Production Ready: Docker containerization with Gunicorn web
-                  server
-                </li>
-                <li>
-                  Grade Support: Comprehensive support for grades 7-12 (الصف
-                  الأول الإعدادي to الصف الثالث الثانوي)
-                </li>
-                <li>
-                  Payment Status: Visual tracking for paid/unpaid/partial
-                  payments with exemption handling
-                </li>
-              </ul>
-            </details>
-            <div class="flex gap-4">
-              <a href="#" target="_blank"
-                class="text-white hover:text-indigo-400 transition-all duration-300 flex items-center"><i
-                  class="fab fa-github mr-2"></i>View Code</a>
-            </div>
-          </div>
-        </div>
+        
       </section>
       <!-- end of projects section -->
 
-      <!-- contact sections -->
+      <!-- contact section -->
       <section id="contact" class="py-20 animate-slide-in-up relative">
         <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-transparent opacity-40 z-0"></div>
         <div class="text-center mb-12 relative z-10">
@@ -808,7 +498,7 @@
       const mobileMenu = document.querySelector(".mobile-menu");
       const hamburgerSpans = document.querySelectorAll(".hamburger span");
       mobileMenu.classList.toggle("hidden");
-      mobileMenu.classList.toggle("active"); // Add/remove 'active' class for transitions
+      mobileMenu.classList.toggle("active");
 
       // Animate hamburger icon
       if (mobileMenu.classList.contains("active")) {
@@ -826,16 +516,17 @@
       .then(response => response.text())
       .then(data => document.getElementById('experience').innerHTML = data);
 
-      
     fetch('sections/skills.html')
       .then(response => response.text())
       .then(data => document.getElementById('skills').innerHTML = data);
 
-   
-
     fetch('sections/certificates.html')
       .then(response => response.text())
       .then(data => document.getElementById('certificates').innerHTML = data);
+
+    // fetch('sections/projects.html')
+    //   .then(response => response.text())
+    //   .then(data => document.getElementById('projects').innerHTML = data);
 
 
 
